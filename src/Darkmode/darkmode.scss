@@ -1,0 +1,13 @@
+.light-container {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 10;
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: white;
+
+  }
+}

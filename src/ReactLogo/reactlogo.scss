@@ -1,0 +1,27 @@
+.react-logo{
+    position: absolute;
+    z-index: 0;
+    bottom: 10%;
+    right: 10%;
+    animation: rotating 40s linear infinite;
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width: 1100px){
+    .react-logo{
+        height: 300px;
+        width: auto;
+        
+    }
+}

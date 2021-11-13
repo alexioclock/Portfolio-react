@@ -1,0 +1,16 @@
+.download-content {
+  width: 5em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  border: 1px black solid;
+  border-image: linear-gradient(to bottom, grey, rgba(0, 0, 0, 0)) 1 100%;
+  padding: 1em 1em 1em 1em;
+  .cv-link {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: gray;
+  }
+}

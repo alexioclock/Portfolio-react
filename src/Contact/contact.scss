@@ -1,0 +1,54 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: block;
+
+  .contact-container {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+
+    .form-input {
+      margin-bottom: 2em;
+      border-radius: 6px;
+    }
+
+    .form-input input {
+      padding: 1em 3em;
+      border: lightgray 1px solid;
+      border-radius: 10px;
+    }
+
+    .form-input-text {
+      margin-bottom: 5em;
+    }
+
+    .form-input-text input {
+      padding: 5em 3em;
+      border: lightgray 1px solid;
+      border-radius: 10px;
+    }
+
+    .send-form {
+      background-color: transparent;
+      font-size: 1em;
+      background-color: rgb(15, 161, 28);
+      padding: 1em 2em;
+      border-radius: 6px;
+      border: none;
+      color: white;
+    }
+  }
+}
+
+
+@media screen and (min-width: 590px){
+  .form-input-text input {
+    width: 80%;
+  }
+  &::placeholder{
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
