@@ -1,5 +1,5 @@
 import "./downloadItem.scss";
-import cv from "../data/cv-web.pdf";
+import cv from "../data/cv-dev-web.pdf";
 
 function DownloadItem() {
   return (

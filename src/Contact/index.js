@@ -1,85 +1,45 @@
-import { useState } from "react";
-import ParticleBackground from "../ParticleBackground";
-import "./contact.scss";
+
+   
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import './contact.scss';
 
 
-function Contact() {
 
-  const [inputName, setInputName] = useState ('');
-  const [inputEmail, setInputEmail] = useState ('');
-  const [inputMessage, setInputMessage] = useState ('');
+export const Contact = () => {
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-
+    emailjs.sendForm('service_jtk7pi4', 'template_81bninu', form.current, 'user_S2ygykPghTx3idW7GW8r6')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
   };
 
-
-  
   return (
-    <>
-    <ParticleBackground />
-    <div className="contact" id="contact">
-      <div className="contact-container">
+    <div className="contact">
         <h1>Me Contacter</h1>
-        <form 
-          action=""  
-          class="form-container"
-          onSubmit={handleSubmit}
-          >
-          <div class="form-input">
-            <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            placeholder="Nom" 
-            required
-            value={inputName}
-              onChange={(e) => {
-                {setInputName(e.target.value)}
-              }} 
-            />
-          </div>
-          <div class="form-input">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-              value={inputEmail}
-              onChange={(e) => {
-                {setInputEmail(e.target.value)}
-              }}
-            />
-          </div>
-          <div class="form-input-text">
-            <input
-              type="text"
-              name="text"
-              id="text"
-              placeholder="Écrivez votre message"
-              required
-              value={inputMessage}
-              onChange={(e) => {
-                {setInputMessage(e.target.value)}
-              }}
-
-            />
-          </div>
-          <div class="form-button">
-            <input 
-            className="send-form" 
-            type="submit" 
-            placeholder="Envoyer votre message!"
-             />
-          </div>
+        <form ref={form} onSubmit={sendEmail}>
+            <div className="input-content">
+                <input type="text" name="user_name" placeholder="Nom"/>
+            </div>
+            <div className="input-content">
+                <input type="email" name="user_email" placeholder="Email"/>
+            </div>
+            <div className="input-content-message">
+                 <input type="text" name="message" placeholder="Votre Message" />
+            </div>
+            <div className="input-content-validation">
+                <input type="submit" value="Send" />
+            </div>
         </form>
-      </div>
     </div>
-    </>
   );
-}
+};
 
 export default Contact;
