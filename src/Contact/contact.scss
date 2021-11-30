@@ -12,6 +12,7 @@
   .input-content{
     padding-bottom: 2em;
     padding-top:2em;
+    
   }
 
   .input-content input{
@@ -23,12 +24,20 @@
 
   .input-content-message{
     margin-bottom: 2em;
-
+    margin-top:2em;
   }
 
   .input-content-message input {
     padding: 5em 8em;
     border:solid 1px lightgray;
     border-radius: 10px;
+  }
+
+  .input-content-validation input{
+    color: white;
+    background-color: lightgreen;
+    border-radius: 10px;
+    border:none;
+    padding: 1em 2em;
   }
 }
