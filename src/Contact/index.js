@@ -9,6 +9,8 @@ import './contact.scss';
 export const Contact = () => {
   const form = useRef();
 
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -36,6 +38,8 @@ export const Contact = () => {
             </div>
             <div className="input-content-validation">
                 <input type="submit" value="Send" />
+            </div>
+            <div className="after-submit">
             </div>
         </form>
     </div>
