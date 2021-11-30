@@ -1,9 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import workLogo from "../assets/work.svg"
 import 'react-vertical-timeline-component/style.min.css';
 import timelineElements from "./timelineElements";
 import './timeline.scss';
-import { itemFromArray } from 'tsparticles';
 
 function Timeline() {
   return (
@@ -12,11 +10,11 @@ function Timeline() {
       <VerticalTimeline>
         {timelineElements.map(element => {
             return(
-              <VerticalTimelineElement key={element.id} date={element.date} icon={element.icon}>
+              <VerticalTimelineElement key={element.id} icon={element.icon}>
                 <h3>{element.title}</h3>
                 <p>{element.describe}</p>
                 <div className="pic-timeline" >{element.picture}</div>
-                <a href={element.link} target="_blank">Lien</a>
+                <a href={element.link} target="_blank">Voir le projet</a>
               </VerticalTimelineElement>
             )
         })
