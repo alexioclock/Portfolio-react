@@ -13,7 +13,6 @@ function Timeline() {
               <VerticalTimelineElement key={element.id} icon={element.icon}>
                 <h3>{element.title}</h3>
                 <p>{element.describe}</p>
-                <div className="pic-timeline" >{element.picture}</div>
                 <a href={element.link} target="_blank">Voir le projet</a>
               </VerticalTimelineElement>
             )
