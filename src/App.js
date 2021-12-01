@@ -7,6 +7,7 @@ import SideBar from "./SideBar";
 import { useState } from "react";
 import Darkmode from "./Darkmode";
 import Timeline from "./Timeline";
+import Footer from "./Footer";
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <Technologies />
       <Timeline />
       <Contact />
+      <Footer />
     </div>
   );
 }

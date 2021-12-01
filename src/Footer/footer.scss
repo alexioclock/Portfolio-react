@@ -1,0 +1,14 @@
+.footer-container{
+    width: 100vw;
+    height: 10vh;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+        color: white;
+    }
+}
+
