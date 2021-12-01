@@ -10,8 +10,8 @@
   }
 
   .input-content{
-    padding-bottom: 2em;
-    padding-top:2em;
+    padding-bottom: 1em;
+    padding-top:1em;
     
   }
 
@@ -24,7 +24,7 @@
 
   .input-content-message{
     margin-bottom: 2em;
-    margin-top:2em;
+    margin-top:1em;
   }
 
   .input-content-message input {
@@ -39,5 +39,21 @@
     border-radius: 10px;
     border:none;
     padding: 1em 2em;
+  }
+}
+
+
+.send-svg{
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 570px) {
+  .input-content-message input {
+    padding: 5em 4em;
+    border:solid 1px red;
+    border-radius: 0px;
   }
 }

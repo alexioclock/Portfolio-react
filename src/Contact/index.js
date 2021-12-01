@@ -1,13 +1,15 @@
 
    
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './contact.scss';
+import sendsvg from '../assets/send.svg';
 
 
 
 export const Contact = () => {
   const form = useRef();
+  const [error, setError] = useState(false);
 
 
 
@@ -25,7 +27,9 @@ export const Contact = () => {
 
   return (
     <div className="contact">
-        <h1>Me Contacter</h1>
+            <h1>Me Contacter
+            <img className="send-svg" src={sendsvg} alt="" />
+            </h1>  
         <form ref={form} onSubmit={sendEmail}>
             <div className="input-content">
                 <input type="text" name="user_name" placeholder="Nom"/>
