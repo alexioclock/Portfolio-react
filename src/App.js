@@ -8,6 +8,7 @@ import { useState } from "react";
 import Darkmode from "./Darkmode";
 import Timeline from "./Timeline";
 import Footer from "./Footer";
+import ParticleBackground from "./ParticleBackground";
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <Presentation path="/presentation"/>
       <Technologies />
       <Timeline />
+      <ParticleBackground />
       <Contact />
       <Footer />
     </div>

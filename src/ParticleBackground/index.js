@@ -5,7 +5,7 @@ import particlesConfig from "./particle-config";
 
 function ParticleBackground() {
   return (
-    <Particles width="20vh" params={particlesConfig}></Particles>
+    <Particles width="100vw" height="20vw" params={particlesConfig}></Particles>
   );
 }
 
