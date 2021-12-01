@@ -1,13 +1,13 @@
 .contact {
+  margin-top: 4em;
   width: 100vw;
-  height: 100vh;
-  margin: auto;
+  height: 85vh;
   text-align: center;
   display: block;
+  font-family: 'Lato', sans-serif;
 
-   h1{
-    margin-top: 5em;
-  }
+
+
 
   .input-content{
     padding-bottom: 1em;
@@ -35,13 +35,18 @@
 
   .input-content-validation input{
     color: white;
-    background-color: lightgreen;
+    background-color: rgb(85, 172, 72);
     border-radius: 10px;
     border:none;
     padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.5s;
   }
 }
 
+.input-content-validation input:hover {
+  transform: scale(1.1);
+}
 
 .send-svg{
   width: 40px;

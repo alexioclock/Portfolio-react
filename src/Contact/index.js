@@ -41,7 +41,7 @@ export const Contact = () => {
                  <input type="text" name="message" placeholder="Votre Message" />
             </div>
             <div className="input-content-validation">
-                <input type="submit" value="Send" />
+                <input type="submit" value="Envoyer" />
             </div>
             <div className="after-submit">
             </div>
