@@ -9,6 +9,7 @@ import Darkmode from "./Darkmode";
 import Timeline from "./Timeline";
 import Footer from "./Footer";
 import ParticleBackground from "./ParticleBackground";
+import Parcours from "./Parcours";
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Home lightTheme={lightTheme}/>
       <Darkmode toggleTheme={toggleTheme} lightTheme={lightTheme} />
       <Presentation path="/presentation"/>
+      <Parcours />
       <Technologies />
       <Timeline />
       <ParticleBackground />

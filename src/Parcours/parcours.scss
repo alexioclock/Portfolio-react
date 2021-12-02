@@ -1,0 +1,14 @@
+.parcours-container{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-family: "lato";
+
+    .parcours-content{
+        width: 50vw;
+        margin:auto;
+        h1{
+            margin-bottom: 3em;
+        }
+    }
+}

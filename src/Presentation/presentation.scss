@@ -33,6 +33,25 @@
   animation: rocket 7s infinite ease-in-out;
 }
 
+.moon-class{
+  position: absolute;
+  top:5em;
+  right: 200px;
+  animation: float 3s infinite ease-in-out ;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 @keyframes rocket {
   0% {
     transform: translate(0, 600px);
