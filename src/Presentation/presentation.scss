@@ -86,5 +86,20 @@
     height: 100vh;
     width: 100vw;
   }
+
+  .moon-class{
+    position: absolute;
+    top:5em;
+    left: 100px;
+    animation: float 3s infinite ease-in-out ;
+  }
 }
 
+
+
+@media screen and (max-width: 740px) {
+
+  .moon-class{
+    display: none;
+  }
+}
