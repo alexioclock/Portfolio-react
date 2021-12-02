@@ -10,6 +10,7 @@ import Timeline from "./Timeline";
 import Footer from "./Footer";
 import ParticleBackground from "./ParticleBackground";
 import Parcours from "./Parcours";
+import ProgressBar from "./ProgressBar";
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <ParticleBackground />
       <Contact />
       <Footer />
+      <ProgressBar />
     </div>
   );
 }
