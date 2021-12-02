@@ -1,8 +1,16 @@
 import DownloadItem from "../DownloadItem";
 import "./presentation.scss";
-import moon from "../assets/pictures/icons/moon.svg"
+import moon from "../assets/pictures/icons/moon.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Presentation() {
+
+  useEffect(() => {
+    Aos.init({duration:2000});
+}, []);
+
   return (
     <div className="presentation-container" id="a-propos">
       <svg
@@ -28,8 +36,8 @@ function Presentation() {
       </svg>
       <img className="moon-class" src={moon} alt=""/>
       <div className="text-about">
-        <h2>À Propos :</h2>
-          <p>
+        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">À Propos :</h2>
+          <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             Suite à une licence de philosophie, je décide de me lancer dans le
             digital et plus précisément dans la rédaction web et le SEO. Après
             plusieurs années dans ce domaine, j'ai eu envie de creuser de nouveaux
