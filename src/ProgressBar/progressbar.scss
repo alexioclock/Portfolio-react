@@ -1,0 +1,16 @@
+.progressBarContainer{
+    position: sticky;
+    z-index: 10;
+    background-color: lightgray;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+}
+
+.progressBarline {
+    background: red;
+    transform-origin: top left;
+    height: 30px;
+
+}
