@@ -97,9 +97,14 @@
 
 
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 760px) {
+
+  .presentation-container{
+    height: auto;
+  }
 
   .moon-class{
     display: none;
+
   }
 }

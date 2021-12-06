@@ -6,13 +6,11 @@
   display: block;
   font-family: 'Lato', sans-serif;
 
-
-
-
   .input-content{
     padding-bottom: 1em;
     padding-top:1em;
-    
+    vertical-align: middle;
+
   }
 
   .input-content input{
@@ -56,6 +54,11 @@
 }
 
 @media screen and (max-width: 570px) {
+
+  .contact {
+    height: 70vh;
+  }
+
   .input-content-message input {
     padding: 5em 4em;
     border:solid 1px red;
