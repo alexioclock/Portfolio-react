@@ -34,7 +34,6 @@ function App() {
       <Parcours />
       <Technologies />
       <Timeline />
-      <ParticleBackground />
       <Contact />
       <Footer />
       <ProgressBar />

@@ -5,7 +5,7 @@ function Network() {
     <div className="nav">
         <ul className="network-list">
           <li className="network-item">
-            <a href="https://www.linkedin.com/in/d%C3%A9veloppeur-frontend-react/" target="_blank" >
+            <a href="https://www.linkedin.com/in/d%C3%A9veloppeur-frontend-react/" target="_blank" rel="noreferrer">
               <svg
                 fill="white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ function Network() {
             </a>
           </li>
           <li className="network-item">
-            <a href="https://www.instagram.com/shooting_vision/?hl=fr" target="_blank" >
+            <a href="https://www.instagram.com/shooting_vision/?hl=fr" target="_blank" rel="noreferrer">
               <svg
                 fill="white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ function Network() {
             </a>
           </li>
           <li className="network-item">
-            <a href="https://github.com/alexioclock" target="_blank">
+            <a href="https://github.com/alexioclock" target="_blank" rel="noreferrer">
               <svg
                 fill="white"
                 xmlns="http://www.w3.org/2000/svg"

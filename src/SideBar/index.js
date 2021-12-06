@@ -2,10 +2,7 @@ import { stack as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 import "./sidebar.scss";
 
-export default (props) => {
-
-
-
+export default ({props}) => {
 
   return (
     <Menu   {...props}>
@@ -15,6 +12,10 @@ export default (props) => {
 
       <Link to="a-propos" spy={true} smooth={true} duration={1000}>
         À propos
+      </Link>
+
+      <Link to="experiences" spy={true} smooth={true} duration={1000}>
+        Expériences
       </Link>
 
       <Link to="technology" spy={true} smooth={true} duration={1000}>

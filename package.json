@@ -11,6 +11,7 @@
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "node-sass": "^6.0.1",
+    "particles.js": "^2.0.0",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-burger-menu": "^3.0.6",

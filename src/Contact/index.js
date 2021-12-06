@@ -1,6 +1,6 @@
 
    
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './contact.scss';
 import sendsvg from '../assets/send.svg';
@@ -9,7 +9,6 @@ import sendsvg from '../assets/send.svg';
 
 export const Contact = () => {
   const form = useRef();
-  const [error, setError] = useState(false);
 
 
 
